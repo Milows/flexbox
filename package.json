@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "browser-sync": "^2.29.0",
-    "gulp": "^4.0.2"
-  }
-}

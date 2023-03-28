@@ -1,0 +1,93 @@
+html {
+	font-family: 'Oxygen', sans-serif;
+}
+body {
+	margin: 0px;
+}
+
+.navbar {
+	background: lightpink;
+}
+
+.navbar div {
+	display: none;
+}
+
+.navbar .toggle,
+.navbar .brand {
+	display: inline-block;
+}
+
+.navbar .link {
+	display: block;
+	text-align: center;
+	padding: 1em;
+	text-decoration: none;
+	background: lightcoral;
+	color: white;
+}
+
+.navbar .link:hover,
+.navbar .link:active {
+	color: lightcoral;
+	background: white;
+}
+
+.navbar .brand {
+	width: 10em;
+	text-align: center;
+	padding: 1em;
+	color: black;
+}
+
+.navbar a {
+	text-decoration: none;
+}
+
+.navbar .toggle {
+	padding: 1em;
+	color: black;
+}
+
+@media (min-width: 48em){
+	.navbar {
+		display: flex;
+	}
+
+	.navbar div {
+		display: flex;
+	}
+
+	.navbar .left,
+	.navbar .right {
+		display: flex;
+		flex: 1;
+	}
+	
+	.navbar .link {
+		width: auto;
+	}
+
+	.navbar .right {
+		justify-content: flex-end;
+	}
+
+	.navbar .toggle {
+		display: none;
+	}
+}
+
+@media (max-width: 48em){
+	.navbar.active .toggle {
+		background: lightcoral;
+		color: white;
+	}
+
+	.navbar .brand {
+		text-align: left;
+	}
+
+	.navbar.active div {
+		display: block;
+	}
+}
